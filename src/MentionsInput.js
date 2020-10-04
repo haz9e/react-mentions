@@ -1028,15 +1028,6 @@ const styled = defaultStyle(
         bottom: 0,
         overflow: 'hidden',
         resize: 'none',
-
-        // fix weird textarea padding in mobile Safari (see: http://stackoverflow.com/questions/6890149/remove-3-pixels-in-ios-webkit-textarea)
-        ...(isMobileSafari
-          ? {
-              marginTop: 1,
-              marginLeft: -3,
-            }
-          : null),
-      },
     },
   },
   ({ singleLine }) => ({
