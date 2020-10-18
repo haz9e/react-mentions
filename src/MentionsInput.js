@@ -1008,9 +1008,9 @@ const styled = defaultStyle(
     // position: 'relative',
     // overflowY: 'visible',
 
-    // input: {
+    input: {
       // display: 'block',
-      // width: '100%',
+      width: '100%',
       // position: 'absolute',
       // margin: 0,
       // top: 0,
@@ -1020,7 +1020,7 @@ const styled = defaultStyle(
       // fontFamily: 'inherit',
       // fontSize: 'inherit',
       // letterSpacing: 'inherit',
-    // }
+    }
   }
 )
 
