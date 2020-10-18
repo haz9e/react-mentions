@@ -1006,34 +1006,30 @@ const isMobileSafari =
 const styled = defaultStyle(
   {
     position: 'relative',
-    overflowY: 'visible',
+    // overflowY: 'visible',
 
-    input: {
-      display: 'block',
-      width: '100%',
-      position: 'absolute',
-      margin: 0,
-      top: 0,
-      left: 0,
-      boxSizing: 'border-box',
-      backgroundColor: 'transparent',
-      fontFamily: 'inherit',
-      fontSize: 'inherit',
-      letterSpacing: 'inherit',
-    },
+    // input: {
+    //   display: 'block',
+    //   width: '100%',
+    //   position: 'absolute',
+    //   margin: 0,
+    //   top: 0,
+    //   left: 0,
+    //   boxSizing: 'border-box',
+    //   backgroundColor: 'transparent',
+    //   fontFamily: 'inherit',
+    //   fontSize: 'inherit',
+    //   letterSpacing: 'inherit',
+    // },
 
-    '&multiLine': {
-      input: {
-        height: '100%',
-        bottom: 0,
-        overflow: 'hidden',
-        resize: 'none',
-    },
-  },
-  ({ singleLine }) => ({
-    '&singleLine': singleLine,
-    '&multiLine': !singleLine,
-  })
+    // '&multiLine': {
+    //   input: {
+    //     height: '100%',
+    //     bottom: 0,
+    //     overflow: 'hidden',
+    //     resize: 'none',
+    // },
+  }
 )
 
 export default styled(MentionsInput)

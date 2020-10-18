@@ -83,6 +83,7 @@
   },
   "dependencies": {
     "@babel/runtime": "7.4.5",
+    "@preconstruct/cli": "^1.1.30",
     "invariant": "^2.2.4",
     "prop-types": "^15.5.8",
     "substyle": "^9.1.0"
