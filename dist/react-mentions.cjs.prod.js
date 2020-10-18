@@ -1200,23 +1200,7 @@ _defineProperty__default.default(MentionsInput, "propTypes", propTypes), _define
 var getComputedStyleLengthProp = function(forElement, propertyName) {
   var length = parseFloat(window.getComputedStyle(forElement, null).getPropertyValue(propertyName));
   return isFinite(length) ? length : 0;
-}, isMobileSafari = "undefined" != typeof navigator && /iPhone|iPad|iPod/i.test(navigator.userAgent), styled$3 = createDefaultStyle({
-  position: "relative",
-  overflowY: "visible",
-  input: {
-    display: "block",
-    width: "100%",
-    position: "absolute",
-    margin: 0,
-    top: 0,
-    left: 0,
-    boxSizing: "border-box",
-    backgroundColor: "transparent",
-    fontFamily: "inherit",
-    fontSize: "inherit",
-    letterSpacing: "inherit"
-  }
-}), MentionsInput$1 = styled$3(MentionsInput), defaultStyle = {
+}, isMobileSafari = "undefined" != typeof navigator && /iPhone|iPad|iPod/i.test(navigator.userAgent), styled$3 = createDefaultStyle({}), MentionsInput$1 = styled$3(MentionsInput), defaultStyle = {
   fontWeight: "inherit"
 }, Mention = function(_ref) {
   var display = _ref.display, style = _ref.style, className = _ref.className, classNames = _ref.classNames, styles = useStyles__default.default(defaultStyle, {

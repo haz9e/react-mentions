@@ -279,19 +279,19 @@ class MentionsInput extends React.Component {
     const { selectionStart, selectionEnd } = this.state
     const { singleLine, children, value, style } = this.props
     return null; //baechu
-    return (
-      <Highlighter
-        containerRef={this.setHighlighterElement}
-        style={style('highlighter')}
-        value={value}
-        singleLine={singleLine}
-        selectionStart={selectionStart}
-        selectionEnd={selectionEnd}
-        onCaretPositionChange={this.handleCaretPositionChange}
-      >
-        {children}
-      </Highlighter>
-    )
+    // return (
+    //   <Highlighter
+    //     containerRef={this.setHighlighterElement}
+    //     style={style('highlighter')}
+    //     value={value}
+    //     singleLine={singleLine}
+    //     selectionStart={selectionStart}
+    //     selectionEnd={selectionEnd}
+    //     onCaretPositionChange={this.handleCaretPositionChange}
+    //   >
+    //     {children}
+    //   </Highlighter>
+    // )
   }
 
   setHighlighterElement = (el) => {
@@ -1005,22 +1005,22 @@ const isMobileSafari =
 
 const styled = defaultStyle(
   {
-    position: 'relative',
-    overflowY: 'visible',
+    // position: 'relative',
+    // overflowY: 'visible',
 
-    input: {
-      display: 'block',
-      width: '100%',
-      position: 'absolute',
-      margin: 0,
-      top: 0,
-      left: 0,
-      boxSizing: 'border-box',
-      backgroundColor: 'transparent',
-      fontFamily: 'inherit',
-      fontSize: 'inherit',
-      letterSpacing: 'inherit',
-    }
+    // input: {
+      // display: 'block',
+      // width: '100%',
+      // position: 'absolute',
+      // margin: 0,
+      // top: 0,
+      // left: 0,
+      // boxSizing: 'border-box',
+      // backgroundColor: 'transparent',
+      // fontFamily: 'inherit',
+      // fontSize: 'inherit',
+      // letterSpacing: 'inherit',
+    // }
   }
 )
 

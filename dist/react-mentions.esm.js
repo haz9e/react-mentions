@@ -1443,6 +1443,19 @@ var MentionsInput = /*#__PURE__*/function (_React$Component) {
           value = _this$props3.value,
           style = _this$props3.style;
       return null; //baechu
+      // return (
+      //   <Highlighter
+      //     containerRef={this.setHighlighterElement}
+      //     style={style('highlighter')}
+      //     value={value}
+      //     singleLine={singleLine}
+      //     selectionStart={selectionStart}
+      //     selectionEnd={selectionEnd}
+      //     onCaretPositionChange={this.handleCaretPositionChange}
+      //   >
+      //     {children}
+      //   </Highlighter>
+      // )
     });
 
     _defineProperty$1(_assertThisInitialized$1(_this), "setHighlighterElement", function (el) {
@@ -2142,22 +2155,21 @@ var getComputedStyleLengthProp = function getComputedStyleLengthProp(forElement,
 };
 
 var isMobileSafari = typeof navigator !== 'undefined' && /iPhone|iPad|iPod/i.test(navigator.userAgent);
-var styled$3 = createDefaultStyle({
-  position: 'relative',
-  overflowY: 'visible',
-  input: {
-    display: 'block',
-    width: '100%',
-    position: 'absolute',
-    margin: 0,
-    top: 0,
-    left: 0,
-    boxSizing: 'border-box',
-    backgroundColor: 'transparent',
-    fontFamily: 'inherit',
-    fontSize: 'inherit',
-    letterSpacing: 'inherit'
-  }
+var styled$3 = createDefaultStyle({// position: 'relative',
+  // overflowY: 'visible',
+  // input: {
+  // display: 'block',
+  // width: '100%',
+  // position: 'absolute',
+  // margin: 0,
+  // top: 0,
+  // left: 0,
+  // boxSizing: 'border-box',
+  // backgroundColor: 'transparent',
+  // fontFamily: 'inherit',
+  // fontSize: 'inherit',
+  // letterSpacing: 'inherit',
+  // }
 });
 var MentionsInput$1 = styled$3(MentionsInput);
 
