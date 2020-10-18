@@ -278,7 +278,7 @@ class MentionsInput extends React.Component {
   renderHighlighter = () => {
     const { selectionStart, selectionEnd } = this.state
     const { singleLine, children, value, style } = this.props
-
+    return null; //baechu
     return (
       <Highlighter
         containerRef={this.setHighlighterElement}
@@ -1006,29 +1006,21 @@ const isMobileSafari =
 const styled = defaultStyle(
   {
     position: 'relative',
-    // overflowY: 'visible',
+    overflowY: 'visible',
 
-    // input: {
-    //   display: 'block',
-    //   width: '100%',
-    //   position: 'absolute',
-    //   margin: 0,
-    //   top: 0,
-    //   left: 0,
-    //   boxSizing: 'border-box',
-    //   backgroundColor: 'transparent',
-    //   fontFamily: 'inherit',
-    //   fontSize: 'inherit',
-    //   letterSpacing: 'inherit',
-    // },
-
-    // '&multiLine': {
-    //   input: {
-    //     height: '100%',
-    //     bottom: 0,
-    //     overflow: 'hidden',
-    //     resize: 'none',
-    // },
+    input: {
+      display: 'block',
+      width: '100%',
+      position: 'absolute',
+      margin: 0,
+      top: 0,
+      left: 0,
+      boxSizing: 'border-box',
+      backgroundColor: 'transparent',
+      fontFamily: 'inherit',
+      fontSize: 'inherit',
+      letterSpacing: 'inherit',
+    }
   }
 )
 

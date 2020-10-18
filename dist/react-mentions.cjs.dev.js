@@ -969,29 +969,27 @@ _defineProperty__default['default'](Highlighter, "defaultProps", {
   value: ''
 });
 
-var styled = createDefaultStyle({
-  position: 'relative',
-  boxSizing: 'border-box',
-  width: '100%',
-  color: 'transparent',
-  overflow: 'hidden',
-  whiteSpace: 'pre-wrap',
-  wordWrap: 'break-word',
-  border: '1px solid transparent',
-  textAlign: 'start',
-  '&singleLine': {
-    whiteSpace: 'pre',
-    wordWrap: null
-  },
-  substring: {
-    visibility: 'hidden'
-  }
-}, function (props) {
-  return {
-    '&singleLine': props.singleLine
-  };
-});
-var Highlighter$1 = styled(Highlighter);
+var styled = createDefaultStyle({// position: 'relative',
+  // boxSizing: 'border-box',
+  // width: '100%',
+  // color: 'transparent',
+  // overflow: 'hidden',
+  // whiteSpace: 'pre-wrap',
+  // wordWrap: 'break-word',
+  // border: '1px solid transparent',
+  // textAlign: 'start',
+  // '&singleLine': {
+  //   whiteSpace: 'pre',
+  //   wordWrap: null,
+  // },
+  // substring: {
+  //   visibility: 'hidden',
+  // },
+} // (props) => ({
+//   '&singleLine': props.singleLine,
+// })
+);
+styled(Highlighter);
 
 var Suggestion = /*#__PURE__*/function (_Component) {
   _inherits__default['default'](Suggestion, _Component);
@@ -1465,15 +1463,7 @@ var MentionsInput = /*#__PURE__*/function (_React$Component) {
           children = _this$props3.children,
           value = _this$props3.value,
           style = _this$props3.style;
-      return /*#__PURE__*/React__default['default'].createElement(Highlighter$1, {
-        containerRef: _this.setHighlighterElement,
-        style: style('highlighter'),
-        value: value,
-        singleLine: singleLine,
-        selectionStart: selectionStart,
-        selectionEnd: selectionEnd,
-        onCaretPositionChange: _this.handleCaretPositionChange
-      }, children);
+      return null; //baechu
     });
 
     _defineProperty__default['default'](_assertThisInitialized__default['default'](_this), "setHighlighterElement", function (el) {
@@ -2174,28 +2164,21 @@ var getComputedStyleLengthProp = function getComputedStyleLengthProp(forElement,
 
 var isMobileSafari = typeof navigator !== 'undefined' && /iPhone|iPad|iPod/i.test(navigator.userAgent);
 var styled$3 = createDefaultStyle({
-  position: 'relative' // overflowY: 'visible',
-  // input: {
-  //   display: 'block',
-  //   width: '100%',
-  //   position: 'absolute',
-  //   margin: 0,
-  //   top: 0,
-  //   left: 0,
-  //   boxSizing: 'border-box',
-  //   backgroundColor: 'transparent',
-  //   fontFamily: 'inherit',
-  //   fontSize: 'inherit',
-  //   letterSpacing: 'inherit',
-  // },
-  // '&multiLine': {
-  //   input: {
-  //     height: '100%',
-  //     bottom: 0,
-  //     overflow: 'hidden',
-  //     resize: 'none',
-  // },
-
+  position: 'relative',
+  overflowY: 'visible',
+  input: {
+    display: 'block',
+    width: '100%',
+    position: 'absolute',
+    margin: 0,
+    top: 0,
+    left: 0,
+    boxSizing: 'border-box',
+    backgroundColor: 'transparent',
+    fontFamily: 'inherit',
+    fontSize: 'inherit',
+    letterSpacing: 'inherit'
+  }
 });
 var MentionsInput$1 = styled$3(MentionsInput);
 

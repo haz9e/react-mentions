@@ -612,28 +612,11 @@ _defineProperty__default.default(Highlighter, "propTypes", {
   value: ""
 });
 
-var styled = createDefaultStyle({
-  position: "relative",
-  boxSizing: "border-box",
-  width: "100%",
-  color: "transparent",
-  overflow: "hidden",
-  whiteSpace: "pre-wrap",
-  wordWrap: "break-word",
-  border: "1px solid transparent",
-  textAlign: "start",
-  "&singleLine": {
-    whiteSpace: "pre",
-    wordWrap: null
-  },
-  substring: {
-    visibility: "hidden"
-  }
-}, (function(props) {
-  return {
-    "&singleLine": props.singleLine
-  };
-})), Highlighter$1 = styled(Highlighter), Suggestion = function(_Component) {
+var styled = createDefaultStyle({});
+
+styled(Highlighter);
+
+var Suggestion = function(_Component) {
   _inherits__default.default(Suggestion, _Component);
   var _super = _createSuper(Suggestion);
   function Suggestion() {
@@ -900,16 +883,10 @@ var getID = function(suggestion) {
       }, _this.props.children);
       return _this.props.suggestionsPortalHost ? ReactDOM__default.default.createPortal(suggestionsNode, _this.props.suggestionsPortalHost) : suggestionsNode;
     })), _defineProperty__default.default(_assertThisInitialized__default.default(_this), "renderHighlighter", (function() {
-      var _this$state = _this.state, selectionStart = _this$state.selectionStart, selectionEnd = _this$state.selectionEnd, _this$props3 = _this.props, singleLine = _this$props3.singleLine, children = _this$props3.children, value = _this$props3.value, style = _this$props3.style;
-      return React__default.default.createElement(Highlighter$1, {
-        containerRef: _this.setHighlighterElement,
-        style: style("highlighter"),
-        value: value,
-        singleLine: singleLine,
-        selectionStart: selectionStart,
-        selectionEnd: selectionEnd,
-        onCaretPositionChange: _this.handleCaretPositionChange
-      }, children);
+      var _this$state = _this.state, _this$props3 = (_this$state.selectionStart, _this$state.selectionEnd, 
+      _this.props);
+      _this$props3.singleLine, _this$props3.children, _this$props3.value, _this$props3.style;
+      return null;
     })), _defineProperty__default.default(_assertThisInitialized__default.default(_this), "setHighlighterElement", (function(el) {
       _this.highlighterElement = el;
     })), _defineProperty__default.default(_assertThisInitialized__default.default(_this), "handleCaretPositionChange", (function(position) {
@@ -1224,7 +1201,21 @@ var getComputedStyleLengthProp = function(forElement, propertyName) {
   var length = parseFloat(window.getComputedStyle(forElement, null).getPropertyValue(propertyName));
   return isFinite(length) ? length : 0;
 }, isMobileSafari = "undefined" != typeof navigator && /iPhone|iPad|iPod/i.test(navigator.userAgent), styled$3 = createDefaultStyle({
-  position: "relative"
+  position: "relative",
+  overflowY: "visible",
+  input: {
+    display: "block",
+    width: "100%",
+    position: "absolute",
+    margin: 0,
+    top: 0,
+    left: 0,
+    boxSizing: "border-box",
+    backgroundColor: "transparent",
+    fontFamily: "inherit",
+    fontSize: "inherit",
+    letterSpacing: "inherit"
+  }
 }), MentionsInput$1 = styled$3(MentionsInput), defaultStyle = {
   fontWeight: "inherit"
 }, Mention = function(_ref) {

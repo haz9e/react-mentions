@@ -206,28 +206,28 @@ class Highlighter extends Component {
 
 const styled = defaultStyle(
   {
-    position: 'relative',
-    boxSizing: 'border-box',
-    width: '100%',
-    color: 'transparent',
-    overflow: 'hidden',
-    whiteSpace: 'pre-wrap',
-    wordWrap: 'break-word',
-    border: '1px solid transparent',
-    textAlign: 'start',
+    // position: 'relative',
+    // boxSizing: 'border-box',
+    // width: '100%',
+    // color: 'transparent',
+    // overflow: 'hidden',
+    // whiteSpace: 'pre-wrap',
+    // wordWrap: 'break-word',
+    // border: '1px solid transparent',
+    // textAlign: 'start',
 
-    '&singleLine': {
-      whiteSpace: 'pre',
-      wordWrap: null,
-    },
+    // '&singleLine': {
+    //   whiteSpace: 'pre',
+    //   wordWrap: null,
+    // },
 
-    substring: {
-      visibility: 'hidden',
-    },
-  },
-  (props) => ({
-    '&singleLine': props.singleLine,
-  })
+    // substring: {
+    //   visibility: 'hidden',
+    // },
+  }
+  // (props) => ({
+  //   '&singleLine': props.singleLine,
+  // })
 )
 
 export default styled(Highlighter)
